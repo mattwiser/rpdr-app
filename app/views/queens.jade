@@ -1,0 +1,16 @@
+extends layout
+block content
+  .container
+    each Queen in Queens    
+      .row
+        .col-sm-6
+          p name
+          p age
+          p location
+          p season
+        .col-sm-6
+          p= Queen.name
+          p= Queen.age
+          p= Queen.location
+          p= Queen.season
+      br

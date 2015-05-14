@@ -1,0 +1,22 @@
+extends layout
+block content
+  .container
+    .row
+      .col-sm-6
+        form(action="/upload", method="post")
+          .form-group
+            label(for="name") Name
+            input#name.form-control(type="text", placeholder="Input Queen's Name", name="name")
+          .form-group
+            label(for="age") Age
+            input#age.form-control(type="number", placeholder="Input Queen's Age", name="age")
+          .form-group
+            label(for="season") Season 
+            input#season.form-control(type="number", placeholder="Input Queen's Season", name="season")          
+          .form-group
+            label(for="location") Location
+            input#location.form-control(type="text", placeholder="Input Queen's Location", name="location")
+          .form-group
+            label(for="image") Image
+            input#location.form-control(type="file", placeholder="Input Queen's Picture", name="image")              
+          button.btn.btn-primary Submit            
